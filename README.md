@@ -67,14 +67,14 @@ Request Body
 Success Response - Post Id is returned and timestamp is auto generated
 ```
 {
-    "InsertedID": "6161df3cc145c2cec877026c"
+    "6161df3cc145c2cec877026c"
 }
 ```
 
 
 ### Get all posts in DB  - (GET) /posts?page=2
 
-Success Response - The user object comes as a response
+Success Response 
 ```
 {[
     {
@@ -109,7 +109,49 @@ Success Response - The user object comes as a response
 ```
 
 
+### Get a post using ID - (GET) /posts/:id
 
+Success Response - The post object comes as a response
+```
+{
+    {
+    "caption": "Nice image 3!",
+    "imageUrl": "imageURL",
+    "ID": "1633804585499709300",
+    "UserID": "1633803024127613400",
+    "timestamp": "0001-01-01T00:00:00Z"
+}
+```
+
+
+### Get all posts of a user - (GET) /posts/users/:id
+
+
+```
+[
+    {
+        "caption": "Nice image!",
+        "imageUrl": "imageURL",
+        "ID": "1633804092363660300",
+        "UserID": "1633803024127613400",
+        "timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "caption": "Nice image 2!",
+        "imageUrl": "imageURL",
+        "ID": "1633804509819333700",
+        "UserID": "1633803024127613400",
+        "timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "caption": "Nice image 3!",
+        "imageUrl": "imageURL",
+        "ID": "1633804585499709300",
+        "UserID": "1633803024127613400",
+        "timestamp": "0001-01-01T00:00:00Z"
+    }
+]
+```
 
 
 
