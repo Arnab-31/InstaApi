@@ -38,6 +38,8 @@ Success Response - The auto generated user id comes as response
 }
 ```
 
+![snap](./readmeImages/snap1.png)
+
 
 
 ### Get a User using ID - (GET) /users/:id
@@ -51,6 +53,8 @@ Success Response - The user object comes as a response
     "Password": "18a132fc2339074ba9beb552c1e3bf4944e1947fc83b109844dd7005627f9e53ebc5f1e0aa269f"
 }
 ```
+
+![snap](./readmeImages/snap2.png)
 
 
 ### Create a post - (POST) /posts
@@ -70,6 +74,8 @@ Success Response - Post Id is returned and timestamp is auto generated
     "6161df3cc145c2cec877026c"
 }
 ```
+
+![snap](./readmeImages/snap4.png)
 
 
 ### Get all posts in DB  - (GET) /posts?page=2
@@ -108,6 +114,8 @@ Success Response
 ]
 ```
 
+![snap](./readmeImages/snap3.png)
+
 
 ### Get a post using ID - (GET) /posts/:id
 
@@ -122,6 +130,8 @@ Success Response - The post object comes as a response
     "timestamp": "0001-01-01T00:00:00Z"
 }
 ```
+
+![snap](./readmeImages/snap5.png)
 
 
 ### Get all posts of a user - (GET) /posts/users/:id
@@ -152,6 +162,9 @@ Success Response - The post object comes as a response
     }
 ]
 ```
+
+
+![snap](./readmeImages/snap6.png)
 
 
 
