@@ -169,7 +169,7 @@ Success Response - The post object comes as a response
 
 
 ## Tech Stack
- - Language - Gp
+ - Language - Go
  - Database - Mongo DB
 
 
