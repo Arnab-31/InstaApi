@@ -55,7 +55,7 @@ var ctx = context.TODO()
 func dbConnect(){
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
-	client, err := mongo.Connect(ctx, options.Client().ApplyURI("Enter MONGO URL"))
+	client, err := mongo.Connect(ctx, options.Client().ApplyURI("ENTER YOUR MONGO URL"))
 
 	
 	if err != nil {
@@ -231,7 +231,7 @@ func (h *coasterHandlers) post(w http.ResponseWriter, r *http.Request) {
 	h.store[coaster.ID] = coaster
 	doc, err := collection.InsertOne(ctx, coaster)
 	fmt.Println(doc) 
-	jsonBytes2,_ := json.Marshal(doc)
+	jsonBytes2,_ := json.Marshal(coaster.ID)
 	w.Header().Add("content-type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	w.Write(jsonBytes2)
